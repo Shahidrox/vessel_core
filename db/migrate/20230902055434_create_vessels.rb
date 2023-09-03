@@ -6,7 +6,7 @@ class CreateVessels < ActiveRecord::Migration[7.0]
       t.string :naccs_code, limit: 30, null: false, index: { unique: true }
       t.string :start_location, limit: 200
       t.string :destination, limit: 200
-      t.integer :type, default: 0
+      t.integer :ship_type, default: 0
 
       t.timestamps
     end

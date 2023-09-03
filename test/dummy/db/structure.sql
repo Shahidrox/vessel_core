@@ -44,7 +44,6 @@ CREATE TABLE public.vessel_trackings (
     next_port character varying,
     eta character varying,
     speed character varying,
-    status character varying,
     created_at timestamp(6) without time zone NOT NULL,
     updated_at timestamp(6) without time zone NOT NULL
 );
@@ -80,7 +79,7 @@ CREATE TABLE public.vessels (
     naccs_code character varying(30) NOT NULL,
     start_location character varying(200),
     destination character varying(200),
-    type integer DEFAULT 0,
+    ship_type integer DEFAULT 0,
     created_at timestamp(6) without time zone NOT NULL,
     updated_at timestamp(6) without time zone NOT NULL
 );

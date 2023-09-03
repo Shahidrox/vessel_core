@@ -5,7 +5,6 @@ class CreateVesselTrackings < ActiveRecord::Migration[7.0]
       t.string :next_port
       t.string :eta
       t.string :speed
-      t.string :status
 
       t.timestamps
     end

@@ -1,11 +1,28 @@
-# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+# == Schema Information
+#
+# Table name: vessels
+#
+#  id             :bigint           not null, primary key
+#  destination    :string(200)
+#  naccs_code     :string(30)       not null
+#  name           :string(100)
+#  ship_type      :integer          default("container_ships")
+#  start_location :string(200)
+#  created_at     :datetime         not null
+#  updated_at     :datetime         not null
+#  owner_id       :string(30)
+#
+# Indexes
+#
+#  index_vessels_on_naccs_code  (naccs_code) UNIQUE
+#
 
 one:
-  name: MyString
-  owner_id: MyString
-  naccs_code: MyString
+  name: name1
+  owner_id: owner1
+  naccs_code: code1
 
 two:
-  name: MyString
-  owner_id: MyString
-  naccs_code: MyString
+  name: name2
+  owner_id: owner2
+  naccs_code: code2
